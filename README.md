@@ -1,26 +1,34 @@
 # StrudelHunt
 ## Structure
-ChallengeTemplate|
----|
-ID|
-Name|
-Description|
-Coordinates|
-City|
-ZIP Code|
-Tasks|
+ChallengeTemplate|Challenge|
+---|---|
+ID|Tasks completed|
+Name|DateTime started|
+Description|DateTime finished|
+Location|Is completed|
+City|Is in progress|
+ZIP Code|Calculated points|
+Tasks|Hints used|
 Difficulty/time|
 DateTime created|
 Total completed|
 Point value|
 Hint limit|
 
-Challenge|
+TaskTemplate|Task|
+---|---|
+ID|DateTime started|
+Name|DateTime finished|
+Description|Is completed|
+Location|
+Image|
+Hints|
+Points value|
+
+User|
 ---|
-Tasks completed|
-DateTime started|
-DateTime finished|
-Is completed|
-Is in progress|
-Calculated points|
-Hints used|
+ID|
+Username|
+Email|
+Password (hash)|
+Challenges|
