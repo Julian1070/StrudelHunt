@@ -14,9 +14,9 @@ ChallengeTemplate.deleteMany(function (err) {
   if (err) return console.error(err)
 })
 
-TaskTemplate.deleteMany(function (err) {
-  if (err) return console.error(err)
-})
+// TaskTemplate.deleteMany(function (err) {
+//   if (err) return console.error(err)
+// })
 
 
 
@@ -25,13 +25,13 @@ const challenge = new ChallengeTemplate({
   name: 'Nob Hill',
   description: 'A Nob Hill challenge',
   location: [37.792978, -122.415640],
-  city: San Francisco,
+  city: 'San Francisco',
   zip: 94108,
-  tasks: Array,
-  difficulty: String,
-  date_created: Date,
-  hint_limit: Number,
-  point_value: Number,
+  // tasks: Array,
+  difficulty: 'Hard',
+  date_created: '2018-01-01',
+  hint_limit: 3,
+  point_value: 200,
   active: true
 })
 
