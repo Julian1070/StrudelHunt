@@ -11,7 +11,6 @@ ZIP Code|Calculated points|
 Tasks|Hints used|
 Difficulty/time|
 DateTime created|
-Total completed|
 Point value|
 Hint limit|
 
