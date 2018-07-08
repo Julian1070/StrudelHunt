@@ -10,7 +10,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 // Delete templates to clear duplicates
 ChallengeTemplate.deleteMany(function (err) {
-  console.log('Deleted')
+  if (err) return console.error(err)
 })
 
 // create an example challenge
@@ -18,7 +18,6 @@ const challenge = new ChallengeTemplate({ name: 'Nob Hill' });
 
 // save example challenge
 challenge.save(function(err) {
-  console.log('Challenge saved')
   if (err) {
     console.error(err)
   }
