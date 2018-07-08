@@ -9,10 +9,11 @@ Location|Is completed
 City|Is in progress
 ZIP Code|Calculated points
 Tasks|Hints used
-Difficulty/time
-DateTime created
-Point value
-Hint limit
+Difficulty/time|
+DateTime created|
+Point value|
+Hint limit|
+Active|
 
 TaskTemplate|Task|
 ---|---|
