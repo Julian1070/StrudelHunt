@@ -7,3 +7,4 @@ often. Where else could we put it?
 * Display somewhere how many challenges the User has finished in how many cities
 (e.g. "You have finished 5 challenges in 3 cities"); maybe include a map
 highlighting the countries.
+* Referrals (e.g. discounts when you finish a challenge)
