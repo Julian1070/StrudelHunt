@@ -18,8 +18,6 @@ ChallengeTemplate.deleteMany(function (err) {
 //   if (err) return console.error(err)
 // })
 
-
-
 // create an example challenge
 const challenge = new ChallengeTemplate({
   name: 'Nob Hill',
