@@ -15,6 +15,10 @@ ChallengeTemplate.deleteMany(function (err) {
   if (err) return console.error(err)
 })
 
+Challenge.deleteMany(function (err) {
+  if (err) return console.error(err)
+})
+
 // TaskTemplate.deleteMany(function (err) {
 //   if (err) return console.error(err)
 // })

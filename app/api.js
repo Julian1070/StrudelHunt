@@ -7,14 +7,14 @@ const app = express()
 
 const base_path = '/api/v1'
 
-app.get(base_path + '/challenges', (req, res) => {
+app.get(base_path + '/challenge_templates', (req, res) => {
   ChallengeTemplate.find(function (err, challenge_template) {
     if (err) return console.error(err)
     res.send(challenge_template)
   })
 })
 
-app.get(base_path + '/challenges2', (req, res) => {
+app.get(base_path + '/challenges', (req, res) => {
   Challenge.find(function (err, challenge) {
     if (err) return console.error(err)
     res.send(challenge)

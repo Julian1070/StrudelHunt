@@ -1,4 +1,9 @@
 # StrudelHunt
+
+## Instructions
+Run `npm install` then `node app/api.js` to run the app on `localhost:3000/api/v1`
+
+
 ## Structure
 ChallengeTemplate|Challenge|
 ---|---|
