@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const TaskTemplate = require('./TaskTemplate.js')
-// const TaskTemplateSchema = mongoose.model('TaskTemplate').schema
+const TaskTemplateSchema = mongoose.model('TaskTemplate').schema
 
 const Schema = mongoose.Schema
 
@@ -11,7 +11,7 @@ const ChallengeTemplateSchema = new Schema({
     location: [Number],
     city: String,
     zip: Number,
-    // tasks: [TaskTemplateSchema],
+    tasks: [TaskTemplateSchema],
     difficulty: String,
     date_created: Date,
     hint_limit: Number,

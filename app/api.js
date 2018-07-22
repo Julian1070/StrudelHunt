@@ -1,6 +1,8 @@
 const express = require('express')
 const ChallengeTemplate = require('./models/ChallengeTemplate')
 const Challenge = require('./models/Challenge')
+const TaskTemplate = require('./models/TaskTemplate')
+const Task = require('./models/Task')
 const db = require('./db')
 const app = express()
 
