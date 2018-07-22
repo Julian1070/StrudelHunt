@@ -14,10 +14,24 @@ app.get(base_path + '/challenge_templates', (req, res) => {
   })
 })
 
+app.get(base_path + '/task_templates', (req, res) => {
+  TaskTemplate.find(function (err, task_template) {
+    if (err) return console.error(err)
+    res.send(task_template)
+  })
+})
+
 app.get(base_path + '/challenges', (req, res) => {
   Challenge.find(function (err, challenge) {
     if (err) return console.error(err)
     res.send(challenge)
+  })
+})
+
+app.get(base_path + '/tasks', (req, res) => {
+  Task.find(function (err, task) {
+    if (err) return console.error(err)
+    res.send(task)
   })
 })
 
