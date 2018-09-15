@@ -16,8 +16,22 @@ app.get(base_path + '/challenge_templates', (req, res) => {
   })
 })
 
+app.get(base_path + '/challenge_templates/:id', (req, res) => {
+  ChallengeTemplate.findById(req.params.id, function (err, challenge_template) {
+    if (err) return console.error(err)
+    res.send(challenge_template)
+  })
+})
+
 app.get(base_path + '/task_templates', (req, res) => {
   TaskTemplate.find(function (err, task_template) {
+    if (err) return console.error(err)
+    res.send(task_template)
+  })
+})
+
+app.get(base_path + '/task_templates/:id', (req, res) => {
+  TaskTemplate.findById(req.params.id, function (err, task_template) {
     if (err) return console.error(err)
     res.send(task_template)
   })
@@ -30,8 +44,22 @@ app.get(base_path + '/challenges', (req, res) => {
   })
 })
 
+app.get(base_path + '/challenges/:id', (req, res) => {
+  Challenge.findById(req.params.id, function (err, challenge) {
+    if (err) return console.error(err)
+    res.send(challenge)
+  })
+})
+
 app.get(base_path + '/tasks', (req, res) => {
   Task.find(function (err, task) {
+    if (err) return console.error(err)
+    res.send(task)
+  })
+})
+
+app.get(base_path + '/tasks/:id', (req, res) => {
+  Task.findById(req.params.id, function (err, task) {
     if (err) return console.error(err)
     res.send(task)
   })

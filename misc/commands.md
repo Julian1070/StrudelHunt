@@ -1,6 +1,8 @@
 # Terminal Commands
+### Install requirements
+`npm install`
 ### Run app
 ```
-node api.js
-nodemon api.js 
+node app/api.js
+nodemon app/api.js
 ```

@@ -28,9 +28,6 @@ Task.deleteMany(function (err) {
   if (err) return console.error(err)
 })
 
-// TaskTemplate.deleteMany(function (err) {
-//   if (err) return console.error(err)
-// })
 
 // create an example challenge_template
 const nob_hill_challenge_template = new ChallengeTemplate({
@@ -57,20 +54,6 @@ const nob_hill_task_template = new TaskTemplate({
   hints: ["Look out for the large orange hot air ballon.", "Turn around, stupid."]
 })
 
-// save example challenge_template
-nob_hill_challenge_template.save(function(err) {
-  if (err) {
-    console.error(err)
-  }
-})
-
-// save example task_template
-nob_hill_task_template.save(function(err) {
-  if (err) {
-    console.error(err)
-  }
-})
-
 // create an example challenge
 const nob_hill_challenge = new Challenge({
   name: nob_hill_challenge_template.name,
@@ -92,14 +75,6 @@ const nob_hill_challenge = new Challenge({
   calculated_points: 31
 })
 
-
-// save example challenge
-nob_hill_challenge.save(function(err) {
-  if (err) {
-    console.error(err)
-  }
-})
-
 // create an example task
 const nob_hill_task = new Task({
   name: nob_hill_task_template.name,
@@ -113,6 +88,26 @@ const nob_hill_task = new Task({
   date_completed: null
 })
 
+// save example challenge_template
+nob_hill_challenge_template.save(function(err) {
+  if (err) {
+    console.error(err)
+  }
+})
+
+// save example task_template
+nob_hill_task_template.save(function(err) {
+  if (err) {
+    console.error(err)
+  }
+})
+
+// save example challenge
+nob_hill_challenge.save(function(err) {
+  if (err) {
+    console.error(err)
+  }
+})
 
 // save example task
 nob_hill_task.save(function(err) {
